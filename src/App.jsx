@@ -4,8 +4,8 @@ import './App.css'
 import Player from './Player'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import {useSound } from 'use-sound'
-
+import space from './pics/space.png'
+import devy from './pics/devy.jpg'
 
 function App() {
 
@@ -35,15 +35,21 @@ const indicesOfFaces = [
     4,5,6,    6,7,4
 ];
   
+
+
   const geometry = new THREE.PolyhedronGeometry( verticesOfCube, indicesOfFaces, 6, 2 )
-  const material = new THREE.MeshStandardMaterial( { color: 0x00ff00 } )
+  const material = new THREE.MeshStandardMaterial( { 
+    color: 0xf800b5, 
+    roughness: 0.1,
+    metalness: 0.1
+  } )
   const poly = new THREE.Mesh( geometry, material )
   
   scene.add(poly)
   camera.position.z = 10
 
   const pointLight = new THREE.PointLight(0xffffff)
-  pointLight.position.set(6, 6, 6)
+  pointLight.position.set(10, 10, 10)
 
   const ambientLight = new THREE.AmbientLight(0xffffff)
   scene.add(pointLight)
@@ -54,11 +60,35 @@ const indicesOfFaces = [
 
   const controls = new OrbitControls(camera, renderer.domElement)
 
+  function newStar(){
+    const geometry = new THREE.SphereGeometry(0.25, 24, 24)
+    const material = new THREE.MeshStandardMaterial( { color: 0xffffff })
+    const star = new THREE.Mesh( geometry, material )
+    const [x, y, z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread( 100 ))
+    
+    star.position.set(x, y, z)
+    scene.add(star)
+  }
+
+  Array(500).fill().forEach(newStar)
+
+  const texture = new THREE.TextureLoader().load(space)
+  scene.background = texture
+
+  const devyTexture = new THREE.TextureLoader().load(devy)
+
+  const devyFace = new THREE.Mesh(
+    new THREE.SphereGeometry(3,32,32),
+    new THREE.MeshStandardMaterial({map: devyTexture})
+  )
+
+  scene.add(devyFace)
+
   function animate() {
     requestAnimationFrame( animate )
-    poly.rotation.x += 0.01
+    poly.rotation.x += 0.05
     poly.rotation.y += 0.005
-    poly.rotation.z += 0.01
+    poly.rotation.z += 0.05
 
     controls.update()
 
