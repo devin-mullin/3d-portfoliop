@@ -46,6 +46,8 @@ const indicesOfFaces = [
   const poly = new THREE.Mesh( geometry, material )
   
   scene.add(poly)
+  poly.position.z = 5
+  poly.position.setX(-10)
   camera.position.z = 10
 
   const pointLight = new THREE.PointLight(0xffffff)
@@ -56,7 +58,7 @@ const indicesOfFaces = [
 
   const lightHelper = new THREE.PointLightHelper(pointLight)
   const gridHelper = new THREE.GridHelper(200, 50)
-  scene.add(lightHelper, gridHelper)
+  // scene.add(lightHelper, gridHelper)
 
   const controls = new OrbitControls(camera, renderer.domElement)
 
@@ -75,14 +77,18 @@ const indicesOfFaces = [
   const texture = new THREE.TextureLoader().load(space)
   scene.background = texture
 
-  const devyTexture = new THREE.TextureLoader().load(devy)
+  function cameraScroll(){ 
+    const top = document.body.getBoundingClientRect().top
+    poly.rotation.x += 0.1
+    poly.rotation.y += 0.125
+    poly.rotation.z += 0.125
 
-  const devyFace = new THREE.Mesh(
-    new THREE.SphereGeometry(3,32,32),
-    new THREE.MeshStandardMaterial({map: devyTexture})
-  )
+    camera.position.z = top * -0.1
+    camera.position.x = top * -0.02
+    camera.rotation.y = top * -0.02
+  }
 
-  scene.add(devyFace)
+  document.body.onscroll = cameraScroll
 
   function animate() {
     requestAnimationFrame( animate )
