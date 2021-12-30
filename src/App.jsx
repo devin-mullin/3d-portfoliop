@@ -4,8 +4,8 @@ import './App.css'
 import Player from './Player'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import space from './pics/space.png'
-import devy from './pics/devy.jpg'
+import vwave from './pics/vwave.jpg'
+
 
 function App() {
 
@@ -21,23 +21,23 @@ function App() {
   document.body.appendChild( renderer.domElement)
   renderer.render( scene, camera )
 
-  const verticesOfCube = [
-    -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
-    -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
-];
+//   const verticesOfCube = [
+//     -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
+//     -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
+// ];
 
-const indicesOfFaces = [
-    2,1,0,    0,3,2,
-    0,4,7,    7,3,0,
-    0,1,5,    5,4,0,
-    1,2,6,    6,5,1,
-    2,3,7,    7,6,2,
-    4,5,6,    6,7,4
-];
+// const indicesOfFaces = [
+//     2,1,0,    0,3,2,
+//     0,4,7,    7,3,0,
+//     0,1,5,    5,4,0,
+//     1,2,6,    6,5,1,
+//     2,3,7,    7,6,2,
+//     4,5,6,    6,7,4
+// ];
   
 
 
-  const geometry = new THREE.PolyhedronGeometry( verticesOfCube, indicesOfFaces, 6, 2 )
+  const geometry = new THREE.TetrahedronGeometry(1.5, 0)
   const material = new THREE.MeshStandardMaterial( { 
     color: 0xf800b5, 
     roughness: 0.1,
@@ -50,10 +50,12 @@ const indicesOfFaces = [
   poly.position.setX(-10)
   camera.position.z = 10
 
+
+   
+
   const pointLight = new THREE.PointLight(0xffffff)
   pointLight.position.set(10, 10, 10)
 
-  const ambientLight = new THREE.AmbientLight(0xffffff)
   scene.add(pointLight)
 
   const lightHelper = new THREE.PointLightHelper(pointLight)
@@ -69,12 +71,13 @@ const indicesOfFaces = [
     const [x, y, z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread( 100 ))
     
     star.position.set(x, y, z)
+
     scene.add(star)
   }
 
   Array(500).fill().forEach(newStar)
 
-  const texture = new THREE.TextureLoader().load(space)
+  const texture = new THREE.TextureLoader().load(vwave)
   scene.background = texture
 
   function cameraScroll(){ 
@@ -105,9 +108,9 @@ const indicesOfFaces = [
 },[])
 
   return (
-
-  <Player className="player" />
-
+  <div>
+    <Player className="player" />
+  </div>
   )
 }
 
