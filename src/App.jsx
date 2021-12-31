@@ -6,8 +6,7 @@ import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.png'
 import test from './pics/test.jpg'
 import sun from './pics/sun.png'
-import devin from './pics/devin.png'
-
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 function App() {
 
@@ -141,10 +140,16 @@ function App() {
   animate()
 },[])
 
-  return (
-  <div>
 
-  </div>
+
+  return (
+<div>
+    <div>
+      <BsLinkedin onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
+      <span> ... </span>
+      <BsGithub onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
+    </div>
+</div>
   )
 }
 
