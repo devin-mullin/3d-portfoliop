@@ -143,13 +143,42 @@ function App() {
 
 
   return (
-<div>
+    <>
     <div>
       <BsLinkedin onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
       <span> ... </span>
       <BsGithub onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
     </div>
-</div>
+<main>
+      <header>
+        <h1>devin mullin</h1>
+        <h4>software engineer</h4>
+      </header>
+      <section>
+        <strong>experience with:</strong>
+        <br/>
+        - JavaScript, React, three.js, Ruby, SQL, PowerShell
+        <br/>
+        - Rails, Vite, Postman, Sinatra, SQLite, ActiveRecord, JIRA, Ubuntu, Git, Windows Server
+        </section>
+        <section>
+            <strong>about:</strong>
+            <br/>
+            - New Orleans => Austin
+            <br/>
+            - former System Administrator / current IT guy
+            <br/>
+            - big on gaming, basketball, and horror movies
+            <br/>
+            - comedy writer, former variety show host
+        </section>
+        <section>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+    </main>
+</>
   )
 }
 
