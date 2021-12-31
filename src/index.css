@@ -28,16 +28,29 @@ main {
 section {
   grid-column: 2 / 8;
   padding: 1rem;
-  background: var(--dark-bg);
+  background: rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
+ 
 }
 
 header {
+  grid-column: 4 / 8;
   background: var(--dark-bg);
-  grid-column: 2 / span 5;
+  color: white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   font-size: 2.5rem;
+  padding: 2.5rem;
+  margin-bottom: var(--spacing);
+}
+
+sub {
+  background: var(--dark-bg);
+  color: pink;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-size: 1rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  align-items: center;
 }
