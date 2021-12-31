@@ -1,13 +1,12 @@
-import { useEffect, useRef } from 'react'
-import logo from './logo.svg'
+import { useEffect } from 'react'
 import './App.css'
-import Player from './Player'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.png'
 import test from './pics/test.jpg'
 import sun from './pics/sun.png'
+import devin from './pics/devin.png'
 
 
 function App() {
@@ -144,7 +143,6 @@ function App() {
 
   return (
   <div>
-    <Player className="player" />
   </div>
   )
 }
