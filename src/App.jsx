@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -7,10 +7,23 @@ import medusa from './pics/medusa.png'
 import test from './pics/test.jpg'
 import sun from './pics/sun.png'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { send } from 'emailjs-com';
 
 function App() {
 
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '',
+  });
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
   useEffect(()=>{ 
   const scene = new THREE.Scene()
@@ -144,18 +157,15 @@ function App() {
 
   return (
     <>
-    <div>
-      <BsLinkedin onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
-      <span> ... </span>
-      <BsGithub onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
-    </div>
+
 <main>
+
       <header>
         <h1>devin mullin</h1>
         <h4>software engineer</h4>
       </header>
       <section>
-        <strong>experience with:</strong>
+        <strong>skills:</strong>
         <br/>
         - JavaScript, React, three.js, Ruby, SQL, PowerShell
         <br/>
@@ -173,10 +183,45 @@ function App() {
             - comedy writer, former variety show host
         </section>
         <section>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <strong>projects:</strong>
         </section>
+    
+    <section>
+    <strong>contact:</strong>
+      <br/>
+      <BsLinkedin onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
+      <br/>
+      <BsGithub onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
+      <br/>
+      <form onSubmit={onSubmit}>
+  <input
+    type='text'
+    name='from_name'
+    placeholder='your name'
+    value={toSend.from_name}
+    onChange={handleChange}
+  />
+  <br/>
+  <input
+    type='text'
+    name='message'
+    placeholder='your message...'
+    value={toSend.message}
+    onChange={handleChange}
+  />
+  <br/>
+  <input
+    type='text'
+    name='reply_to'
+    placeholder='your email'
+    value={toSend.reply_to}
+    onChange={handleChange}
+  />
+  <br/>
+  <button type='submit'>Submit</button>
+</form>
+      </section>
+    
     </main>
 </>
   )
