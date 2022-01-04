@@ -59,6 +59,10 @@ button {
   grid-template-columns: repeat(12, 1fr)
 }
 
+.link {
+  color: aqua
+}
+
 .form {
   padding-top: 2px;
   padding-bottom: 3px;

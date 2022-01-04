@@ -54,12 +54,18 @@ section {
 }
 
 header {
-  grid-column: 2 / 8;
+  grid-column: 5 / 8;
   color: white;
   text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
   font-size: 2.5rem;
   padding: 1rem;
   margin-bottom: var(--spacing);
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    grid-column: 2 / 8;
+  }
 }
 
 sub {

@@ -197,18 +197,31 @@ function App() {
         - Rails, Vite, Postman, Sinatra, SQLite, ActiveRecord, JIRA, Ubuntu, Git, Windows Server
         </section>
         <section>
+          <strong>projects:</strong>
+          <br />
+          coming soon (formatting) 
+          <br />
+          <strong>devy's fantasy basketball app</strong>
+          <br/>
+          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
+        </section>
+        <section>
+          <strong>experience:</strong>
+          <br/>
+          coming soon (formatting)
+        </section>
+        <section>
             <strong>about:</strong>
             <br/>
             - New Orleans => Austin
             <br/>
-            - former System Administrator / current IT guy
+            - former System Administrator / current software engineer
             <br/>
-            - big on gaming, basketball, and horror movies
+            - avid reader / learner, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
             <br/>
-            - comedy writer, former variety show host
-        </section>
-        <section>
-          <strong>projects:</strong>
+            - big on gaming, basketball, and sci-fi / western / horror fi lms
+            <br/>
+            - comedy writer, former variety show host, former (and sometimes current) amateur music producer
         </section>
     
     <section>
