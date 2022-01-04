@@ -8,8 +8,17 @@ import test from './pics/test.jpg'
 import sun from './pics/sun.png'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { send } from 'emailjs-com';
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -138,15 +147,15 @@ function App() {
 
   function cameraScroll(){ 
     const top = document.body.getBoundingClientRect().top
-    poly.rotation.x += 0.1
-    poly.rotation.y += 0.125
-    poly.rotation.z += 0.125
-    poly2.rotation.x += 0.1
-    poly2.rotation.y += 0.125
-    poly2.rotation.z += 0.125
-    poly3.rotation.x += 0.2
-    poly3.rotation.y += 0.225
-    poly3.rotation.z += 0.2
+    poly.rotation.x += 0.05
+    poly.rotation.y += 0.075
+    poly.rotation.z += 0.05
+    poly2.rotation.x += -0.05
+    poly2.rotation.y += -0.075
+    poly2.rotation.z += -0.05
+    poly3.rotation.x += 0.05
+    poly3.rotation.y += 0.075
+    poly3.rotation.z += 0.05
     camera.position.z = top * -0.1
     camera.position.x = top * -0.02
     camera.rotation.y = top * -0.02
@@ -156,15 +165,15 @@ function App() {
 
   function animate() {
     requestAnimationFrame( animate )
-    poly.rotation.x += 0.05
+    poly.rotation.x += 0.01
     poly.rotation.y += 0.005
-    poly.rotation.z += 0.05
-    poly2.rotation.x += -0.05
+    poly.rotation.z += 0.01
+    poly2.rotation.x += -0.01
     poly2.rotation.y += -0.005
-    poly2.rotation.z += -0.05
-    poly3.rotation.x += 0.05
+    poly2.rotation.z += -0.01
+    poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
-    poly3.rotation.z += 0.05
+    poly3.rotation.z += 0.01
 
     controls.update()
 
@@ -212,6 +221,7 @@ function App() {
   <form className="form" onSubmit={onSubmit}>
     <textarea
     type='text'
+    className='input'
     name='from_name'
     style={{width: 300}}
     placeholder='your name'
@@ -222,6 +232,7 @@ function App() {
   <textarea
     type='text'
     name='reply_to'
+    className='input'
     style={{width: 300}}
     placeholder='your email'
     value={toSend.reply_to}
@@ -231,6 +242,7 @@ function App() {
   <textarea
     type='text'
     name='message'
+    className='input'
     wrap="soft"
     style={{width: 400, height: 100}}
     placeholder='your message...'
