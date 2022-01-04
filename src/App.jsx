@@ -15,6 +15,10 @@ function App() {
     from_name: '',
     message: '',
     reply_to: '',
+    formErrors: {from_name: '', message: '', reply_to: ''},
+    from_nameValid: false,
+    messageValid: false,
+    reply_toValid: false
   });
 
   const onSubmit = (e) => {
@@ -204,6 +208,7 @@ function App() {
     <textarea
     type='text'
     name='from_name'
+    style={{width: 300}}
     placeholder='your name'
     value={toSend.from_name}
     onChange={handleChange}
@@ -212,6 +217,7 @@ function App() {
   <textarea
     type='text'
     name='reply_to'
+    style={{width: 300}}
     placeholder='your email'
     value={toSend.reply_to}
     onChange={handleChange}
@@ -221,13 +227,13 @@ function App() {
     type='text'
     name='message'
     wrap="soft"
-    style={{width: 200, height: 100}}
+    style={{width: 400, height: 100}}
     placeholder='your message...'
     value={toSend.message}
     onChange={handleChange}
   />
   <br/>
-  <button type='submit'>Submit</button>
+  <button className="button" type='submit'>Submit</button>
 </form>
   <div className="icons">
       <br/>
