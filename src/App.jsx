@@ -182,7 +182,7 @@ function App() {
   return (
     <>
 
-<main>
+<body>
 
       <header>
         <h1>devin mullin</h1>
@@ -253,7 +253,7 @@ function App() {
       <br/>
     </div>
 </section>
-    </main>
+    </body>
 </>
   )
 }

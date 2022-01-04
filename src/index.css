@@ -4,6 +4,7 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  min-height: 100%
 }
 
 :root {
@@ -15,7 +16,7 @@ canvas {
   font-style: normal;
 }
 
-main {
+body {
   width: 100vw;
   color: white;
   z-index: 99;
@@ -28,7 +29,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  main{
+  body{
     position: absolute;
   }
 }
