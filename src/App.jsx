@@ -14,15 +14,12 @@ function App() {
   const [toSend, setToSend] = useState({
     from_name: '',
     message: '',
-    reply_to: '',
-    formErrors: {from_name: '', message: '', reply_to: ''},
-    from_nameValid: false,
-    messageValid: false,
-    reply_toValid: false
+    reply_to: ''
   });
 
   const onSubmit = (e) => {
     e.preventDefault();
+    if(toSend.from_name != '' && toSend.message != '' && toSend.reply_to.includes('@'))
     send(
       'service_a3ugg8g',
       'template_ix17p4p',
@@ -30,11 +27,19 @@ function App() {
       'user_VV3aStZF2GsejfG0iRyQj'
     )
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        alert('thanks, get back to you soon!');
       })
       .catch((err) => {
         console.log('FAILED...', err);
       });
+      else {
+       alert('please fill out the required fields so we can actually talk!')
+      }
+      setToSend({
+        from_name: '',
+        message: '',
+        reply_to: ''
+      })
   };
 
   const handleChange = (e) => {
