@@ -27,7 +27,7 @@ main {
 }
 
 section {
-  grid-column: 2 / 8;
+  grid-column: 4 / 8;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
@@ -37,11 +37,11 @@ section {
 }
 
 header {
-  grid-column: 4 / 8;
+  grid-column: 2 / 8;
   color: white;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   font-size: 2.5rem;
-  padding: 2.5rem;
+  padding: 1rem;
   margin-bottom: var(--spacing);
 }
 

@@ -19,6 +19,18 @@ function App() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    send(
+      'service_a3ugg8g',
+      'template_ix17p4p',
+      toSend,
+      'user_VV3aStZF2GsejfG0iRyQj'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+      });
   };
 
   const handleChange = (e) => {
@@ -188,13 +200,8 @@ function App() {
     
     <section>
     <strong>contact:</strong>
-      <br/>
-      <BsLinkedin onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
-      <br/>
-      <BsGithub onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
-      <br/>
-      <form onSubmit={onSubmit}>
-  <input
+  <form className="form" onSubmit={onSubmit}>
+    <textarea
     type='text'
     name='from_name'
     placeholder='your name'
@@ -202,15 +209,7 @@ function App() {
     onChange={handleChange}
   />
   <br/>
-  <input
-    type='text'
-    name='message'
-    placeholder='your message...'
-    value={toSend.message}
-    onChange={handleChange}
-  />
-  <br/>
-  <input
+  <textarea
     type='text'
     name='reply_to'
     placeholder='your email'
@@ -218,8 +217,25 @@ function App() {
     onChange={handleChange}
   />
   <br/>
+  <textarea
+    type='text'
+    name='message'
+    wrap="soft"
+    style={{width: 200, height: 100}}
+    placeholder='your message...'
+    value={toSend.message}
+    onChange={handleChange}
+  />
+  <br/>
   <button type='submit'>Submit</button>
 </form>
+  <div className="icons">
+      <br/>
+      <BsLinkedin className="icon" onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
+      <br/>
+      <BsGithub className="icon" onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
+      <br/>
+    </div>
       </section>
     
     </main>

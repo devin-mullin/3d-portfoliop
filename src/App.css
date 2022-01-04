@@ -59,10 +59,11 @@ button {
   grid-template-columns: repeat(12, 1fr)
 }
 
-.content {
-  display: none
+.icons {
+  display: flex;
+  justify-content: center
 }
 
-.show {
-  display: flex
+.icon {
+  margin: 5px
 }
