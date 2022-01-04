@@ -1,4 +1,4 @@
-
+ 
 
 .App-logo {
   height: 40vmin;
@@ -65,13 +65,45 @@ button {
   padding-left: 2px
 }
 
+@media screen and (max-width: 768px) {
+  .form{
+    width: 100%;
+  }
+}
+
+
+.input {
+  background-color: black;
+  color: white;
+  width: 300px
+}
+
+@media screen and (max-width: 768px) {
+  .input{
+    width: 75%;
+  }
+}
+
+.message {
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .message{
+    width: 75%;
+  }
+}
+
 .icons {
   display: flex;
   justify-content: center
 }
 
 .icon {
-  margin: 5px
+  margin: 5px;
 }
 
 .button {
@@ -98,9 +130,4 @@ button {
   box-shadow: 0 12px 24px rgba(gray, 0.1);
   .text
     background-image: linear-gradient(-45deg, #4568DC , #B06AB3)
-}
-
-.input {
-  background-color: black;
-  color: white
 }

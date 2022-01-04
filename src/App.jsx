@@ -5,20 +5,12 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.png'
 import test from './pics/test.jpg'
-import sun from './pics/sun.png'
+import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { send } from 'emailjs-com';
-import { useMediaQuery } from 'react-responsive'
+
 
 function App() {
-
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -57,7 +49,7 @@ function App() {
 
   useEffect(()=>{ 
   const scene = new THREE.Scene()
-  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
+  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000)
   const renderer = new THREE.WebGLRenderer()
 
   renderer.setPixelRatio( window.devicePixelRatio )
@@ -99,25 +91,27 @@ function App() {
   const poly2 = new THREE.Mesh( geometry, material2 )
   
   scene.add(poly2)
-  poly2.position.z = 25
-  poly2.position.setX(-10)
+  poly2.position.z = 60
+  poly2.position.setX(15)
 
-  const polyTexture3 = new THREE.TextureLoader().load(sun)
+  const polyTexture3 = new THREE.TextureLoader().load(basketball)
   const material3 = new THREE.MeshStandardMaterial( { 
     map: polyTexture3
   } )
   const poly3 = new THREE.Mesh( geometry, material3 )
   
   scene.add(poly3)
-  poly3.position.z = 45
-  poly3.position.setX(-10)
+  poly3.position.z = 90
+  poly3.position.setX(0)
 
 
 
   const pointLight = new THREE.PointLight(0xffffff)
   pointLight.position.set(10, 10, 10)
 
-  scene.add(pointLight)
+  const ambientLight = new THREE.AmbientLight(0xffffff)
+
+  scene.add(ambientLight)
 
   const lightHelper = new THREE.PointLightHelper(pointLight)
   const gridHelper = new THREE.GridHelper(200, 50)
@@ -129,7 +123,7 @@ function App() {
     const geometry = new THREE.SphereGeometry(0.25, 24, 24)
     const material = new THREE.MeshStandardMaterial( { 
       color: 0x00ffff, 
-      roughness: 0.1,
+      roughness: 0.5,
       metalness: 0.4
     })
     const star = new THREE.Mesh( geometry, material )
@@ -147,15 +141,15 @@ function App() {
 
   function cameraScroll(){ 
     const top = document.body.getBoundingClientRect().top
-    poly.rotation.x += 0.05
-    poly.rotation.y += 0.075
-    poly.rotation.z += 0.05
-    poly2.rotation.x += -0.05
-    poly2.rotation.y += -0.075
-    poly2.rotation.z += -0.05
-    poly3.rotation.x += 0.05
-    poly3.rotation.y += 0.075
-    poly3.rotation.z += 0.05
+    poly.rotation.x += 0.01
+    poly.rotation.y += 0.005
+    poly.rotation.z += 0.01
+    poly2.rotation.x += -0.01
+    poly2.rotation.y += -0.005
+    poly2.rotation.z += -0.01
+    poly3.rotation.x += 0.01
+    poly3.rotation.y += 0.005
+    poly3.rotation.z += 0.01
     camera.position.z = top * -0.1
     camera.position.x = top * -0.02
     camera.rotation.y = top * -0.02
@@ -223,7 +217,6 @@ function App() {
     type='text'
     className='input'
     name='from_name'
-    style={{width: 300}}
     placeholder='your name'
     value={toSend.from_name}
     onChange={handleChange}
@@ -233,7 +226,6 @@ function App() {
     type='text'
     name='reply_to'
     className='input'
-    style={{width: 300}}
     placeholder='your email'
     value={toSend.reply_to}
     onChange={handleChange}
@@ -242,9 +234,8 @@ function App() {
   <textarea
     type='text'
     name='message'
-    className='input'
+    className='message'
     wrap="soft"
-    style={{width: 400, height: 100}}
     placeholder='your message...'
     value={toSend.message}
     onChange={handleChange}
@@ -252,15 +243,16 @@ function App() {
   <br/>
   <button className="button" type='submit'>Submit</button>
 </form>
-  <div className="icons">
+      </section>
+<section>
+<div className="icons">
       <br/>
       <BsLinkedin className="icon" onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
       <br/>
       <BsGithub className="icon" onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
       <br/>
     </div>
-      </section>
-    
+</section>
     </main>
 </>
   )
