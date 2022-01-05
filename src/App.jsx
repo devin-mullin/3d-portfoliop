@@ -192,9 +192,11 @@ function App() {
       <section>
         <strong>skills:</strong>
         <br/>
-        - JavaScript, React, three.js, Ruby, SQL, PowerShell
+        - JavaScript, Ruby, SQL, PowerShell
         <br/>
-        - Rails, Vite, Postman, Sinatra, SQLite, ActiveRecord, JIRA, Ubuntu, Git, Windows Server
+        - React, three.js, Rails, Vite, Sinatra, SQLite, ActiveRecord
+        <br/>
+        - Postman, JIRA, Ubuntu, Git, Windows Server
         </section>
         <section>
           <strong>projects:</strong>
@@ -219,7 +221,7 @@ function App() {
             <br/>
             - avid reader / learner, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
             <br/>
-            - big on gaming, basketball, and sci-fi / western / horror fi lms
+            - big on gaming, basketball, and sci-fi / western / horror films
             <br/>
             - comedy writer, former variety show host, former (and sometimes current) amateur music producer
         </section>
