@@ -95,7 +95,7 @@ function App() {
   const poly2 = new THREE.Mesh( geometry, material2 )
   
   scene.add(poly2)
-  poly2.position.z = 60
+  poly2.position.z = 40
   poly2.position.setX(15)
 
   const polyTexture3 = new THREE.TextureLoader().load(basketball)
@@ -105,7 +105,7 @@ function App() {
   const poly3 = new THREE.Mesh( geometry, material3 )
   
   scene.add(poly3)
-  poly3.position.z = 90
+  poly3.position.z = 80
   poly3.position.setX(0)
 
 
@@ -145,6 +145,7 @@ function App() {
 
   function cameraScroll(){ 
     const top = document.body.getBoundingClientRect().top
+    TWEEN.update()
     poly.rotation.x += 0.01
     poly.rotation.y += 0.005
     poly.rotation.z += 0.01
@@ -154,9 +155,9 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-    camera.position.z = top * -0.1
-    camera.position.x = top * -0.02
-    camera.rotation.y = top * -0.02
+    camera.position.z = top * -0.06
+    camera.position.x = top * -0.0025
+    camera.rotation.y = top * -0.0025
   }
 
   document.body.onscroll = cameraScroll
