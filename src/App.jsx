@@ -8,7 +8,6 @@ import test from './pics/test.jpg'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { send } from 'emailjs-com';
-import Player from './Player'
 
 
 function App() {
@@ -29,13 +28,14 @@ function App() {
       'user_VV3aStZF2GsejfG0iRyQj'
     )
       .then((response) => {
-        alert("processing, i'll get back to you soon!");
+        console.log(response);
+        alert(`processing your message, ${toSend.from_name}. i'll get back to you soon!`);
       })
       .catch((err) => {
         console.log('FAILED...', err);
       });
       else {
-       alert('please fill out the form so we can actually talk!')
+       alert('please completely fill out the form so we can actually talk!')
       }
       setToSend({
         from_name: '',
