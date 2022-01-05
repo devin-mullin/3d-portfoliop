@@ -218,7 +218,7 @@ function App() {
           <br/>
           <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
           <br/>
-          dictionary app built with React, Styled Components, and Merriam-Webster's API
+          dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
         </section>
         <section>
           <strong>experience:</strong>
