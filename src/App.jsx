@@ -189,7 +189,7 @@ function App() {
     
       <header>
         <h1>devin mullin</h1>
-        <h4>software engineer</h4>
+        <h4>software developer</h4>
       </header>
       <section>
         <strong>skills:</strong>
