@@ -206,8 +206,15 @@ function App() {
           <br /> 
           <strong><a className="link" href="https://github.com/devin-mullin/basketball-frontend">devy's fantasy basketball app</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a> 
           <br/>
-          <br />
+          frontend built with React, Redux Toolkit, and React-Bootstrap. backend built with Rails, ActiveRecord, SQLite3, & JWT auth
+          <br/>
+          <br/>
+          roadmap includes user league creation, trade functionality, and live game score / injury updates 
+          <br/>
+          <br/>
           <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
+          <br/>
+          dictionary app built with React, Styled Components, and Merriam-Webster's API
         </section>
         <section>
           <strong>experience:</strong>
