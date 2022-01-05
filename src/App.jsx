@@ -181,8 +181,6 @@ function App() {
 
 
   return (
-    <>
-
 <body>
     
       <header>
@@ -192,38 +190,59 @@ function App() {
       <section>
         <strong>skills:</strong>
         <br/>
-        - JavaScript, Ruby, SQL, PowerShell
+        ◻ React, JavaScript, Ruby, SQL, PowerShell
         <br/>
-        - React, three.js, Rails, Vite, Sinatra, SQLite, ActiveRecord
         <br/>
-        - Postman, JIRA, Ubuntu, Git, Windows Server
+        ◻ three.js, Rails, Sinatra, SQLite, ActiveRecord
+        <br/>
+        <br/>
+        ◻ Postman, JIRA, Ubuntu, Vite, Git, Windows Server
         </section>
         <section>
           <strong>projects:</strong>
           <br />
           coming soon (formatting) 
           <br />
-          <strong>devy's fantasy basketball app</strong>
+          <br /> 
+          <strong><a className="link" href="https://github.com/devin-mullin/basketball-frontend">devy's fantasy basketball app</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a> 
           <br/>
+          <br />
           <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
         </section>
         <section>
           <strong>experience:</strong>
           <br/>
-          coming soon (formatting)
+          <strong>DM Digital, LLC</strong> | Owner
+          <br/>
+          2020 - present
+          <br/>
+          <br/>
+          <strong>Testronic</strong> | QA Technician
+          <br/>
+          Mar 2021 - Aug 2021
+          <br/>
+          <br/>
+          <strong>Mullin Landscape</strong> | System Administrator
+          <br/>
+          2015 - 2020
+          <br/>     
         </section>
         <section>
             <strong>about:</strong>
             <br/>
-            - New Orleans => Austin
+            ◻ New Orleans => Austin
             <br/>
-            - former System Administrator / current software engineer
             <br/>
-            - avid reader / learner, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
+            ◻ former system administrator / current software engineer
             <br/>
-            - big on gaming, basketball, and sci-fi / western / horror films
             <br/>
-            - comedy writer, former variety show host, former (and sometimes current) amateur music producer
+            ◻ avid reader / learner, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
+            <br/>
+            <br/>
+            ◻ big on gaming, basketball, and sci-fi / western / horror films
+            <br/>
+            <br/>
+            ◻ comedy writer, former variety show host, former (& sometimes current) amateur music producer
         </section>
     
     <section>
@@ -270,7 +289,6 @@ function App() {
     </div>
 </section>
     </body>
-</>
   )
 }
 
