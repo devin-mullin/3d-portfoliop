@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 import vwave from './pics/vwave.jpg'
-import medusa from './pics/medusa.png'
+import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
@@ -56,8 +57,10 @@ function App() {
   renderer.setPixelRatio( window.devicePixelRatio )
   renderer.setSize( window.innerWidth, window.innerHeight)
   document.body.appendChild( renderer.domElement)
+  const render = () =>{
+  TWEEN.update()
   renderer.render( scene, camera )
-
+  }
 //   const verticesOfCube = [
 //     -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
 //     -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
@@ -172,7 +175,7 @@ function App() {
 
     controls.update()
 
-    renderer.render( scene, camera )
+    render()
   }
 
   animate()
