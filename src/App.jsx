@@ -214,7 +214,7 @@ function App() {
           roadmap includes user league creation, trade functionality, and live game score / injury updates 
           <br/>
           <br/>
-          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
+          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong> | <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2">frontend</a>
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/scott-donnan/">Scott Donnan</a>
           <br/>
