@@ -221,7 +221,7 @@ function App() {
           dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
           <br/>
           <br/>
-          <strong><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">hades run tracker</a></strong><a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
+          <strong><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">hades run tracker</a></strong> | <a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
           <br/>
