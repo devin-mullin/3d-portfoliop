@@ -254,7 +254,7 @@ function App() {
             ◻ former system administrator / current software engineer
             <br/>
             <br/>
-            ◻ avid reader / learner, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
+            ◻ avid learner of ~knowledge~, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
             <br/>
             <br/>
             ◻ big on gaming, basketball, and sci-fi / western / horror films
