@@ -125,7 +125,7 @@ function App() {
 
   function newStar(){
     const geometry = new THREE.SphereGeometry(0.25, 24, 24)
-    const material = new THREE.MeshStandardMaterial( { 
+    const material = new THREE.MeshPhongMaterial( { 
       color: 0x00ffff, 
       roughness: 0.5,
       metalness: 0.4
@@ -208,7 +208,7 @@ function App() {
           coming soon (formatting) 
           <br />
           <br /> 
-          <strong><a className="link" href="https://github.com/devin-mullin/basketball-frontend">devy's fantasy basketball app</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a> 
+          <strong><a className="link" href="https://www.youtube.com/watch?v=-rWUDwGAKxE">devyleague fantasy basketball app</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
           <br/>
           frontend built with React, Redux Toolkit, and React-Bootstrap. backend built with Rails, ActiveRecord, SQLite3, & JWT auth
           <br/>
@@ -218,7 +218,16 @@ function App() {
           <br/>
           <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong>
           <br/>
+          partnered with <a href="https://www.linkedin.com/in/scott-donnan/">Scott Donnan</a>
+          <br/>
           dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
+          <br/>
+          <br/>
+          <strong><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">hades run tracker</a></strong><a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
+          <br/>
+          partnered with <a href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
+          <br/>
+          a run tracker for the incredibly popular (and supposedly incredible, i still need to play it) game Hades. built with React frontend & Rails/Sinatra backend
         </section>
         <section>
           <strong>experience:</strong>
