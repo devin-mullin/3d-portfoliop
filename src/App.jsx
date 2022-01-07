@@ -292,7 +292,7 @@ function App() {
             ◻ 7+ years in tech, lifelong 'computer guy' 
             <br/>
             <br/>
-            ◻ avid learner of ~knowledge~, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
+            ◻ avid learner of knowledge, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
             <br/>
             <br/>
             ◻ big on gaming, basketball, and sci-fi / western / horror films
