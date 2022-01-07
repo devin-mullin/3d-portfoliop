@@ -197,7 +197,7 @@ function App() {
           </span>
           <BsFileText
             className="icon" 
-            onClick={()=>window.open("./src/DevinMullinResume.pdf")} 
+            onClick={()=>window.open("./DevinMullinResume.pdf")} 
             alt="Resume"
             style={{cursor: "pointer"}}/>
       </div>
