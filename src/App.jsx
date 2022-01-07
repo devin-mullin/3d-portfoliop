@@ -126,9 +126,7 @@ function App() {
   function newStar(){
     const geometry = new THREE.SphereGeometry(0.25, 24, 24)
     const material = new THREE.MeshPhongMaterial( { 
-      color: 0x00ffff, 
-      roughness: 0.5,
-      metalness: 0.4
+      color: 0x00ffff,
     })
     const star = new THREE.Mesh( geometry, material )
     const [x, y, z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread( 100 ))
