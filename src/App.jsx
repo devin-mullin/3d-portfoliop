@@ -106,7 +106,7 @@ function App() {
   
   scene.add(poly3)
   poly3.position.z = 80
-  poly3.position.setX(0)
+  poly3.position.setX(-5)
 
 
 
@@ -260,7 +260,7 @@ function App() {
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
           <br/>
-          a run tracker for the incredibly popular (and supposedly incredible, i still need to play it) game Hades. built with React frontend & Rails/Sinatra backend
+          a run tracker for the incredibly popular (and supposedly amazing, i still need to play it) game Hades. built with React frontend & Rails/Sinatra backend
         </section>
         <section>
           <strong>experience:</strong>

@@ -39,7 +39,7 @@ section {
   padding: 1rem;
   border-radius: 25px;
   width: 600px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   text-shadow: 0 0 5px #000000, 0 0 4px #000000;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -51,6 +51,7 @@ section {
     grid-column: 3 / 8;
     font-size: auto;
     width: 250px;
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
