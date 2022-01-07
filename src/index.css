@@ -51,7 +51,7 @@ section {
     grid-column: 3 / 8;
     font-size: auto;
     width: 250px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.55)
   }
 }
 
