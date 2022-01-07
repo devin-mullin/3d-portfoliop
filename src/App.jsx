@@ -228,6 +228,7 @@ function App() {
       <section>
         <strong>skills:</strong>
         <br/>
+        <br/>
         ◻ React, JavaScript, Ruby, SQL, PowerShell
         <br/>
         <br/>
@@ -264,6 +265,7 @@ function App() {
         <section>
           <strong>experience:</strong>
           <br/>
+          <br/>
           <strong>DM Digital, LLC</strong> | Owner
           <br/>
           2020 - present
@@ -281,6 +283,7 @@ function App() {
         </section>
         <section>
             <strong>about:</strong>
+            <br/>
             <br/>
             ◻ New Orleans => Austin
             <br/>
