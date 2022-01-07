@@ -300,7 +300,7 @@ function App() {
     
     <section>
     <strong>contact:</strong>
-  <form className="form" onSubmit={onSubmit}>
+  <form onSubmit={onSubmit}>
     <textarea
     type='text'
     className='input'
