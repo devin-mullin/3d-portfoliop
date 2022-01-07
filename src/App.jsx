@@ -286,7 +286,7 @@ function App() {
             ◻ New Orleans => Austin
             <br/>
             <br/>
-            ◻ figuring how to live above sea-level
+            ◻ figuring how to live above sea level
             <br/>
             <br/>
             ◻ 7+ years in tech, lifelong 'computer guy' 
