@@ -9,7 +9,7 @@ import test from './pics/test.jpg'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub, BsMedium, BsFileText } from 'react-icons/bs'
 import { send } from 'emailjs-com';
-
+import DevinMullinResume from "/src/DevinMullinResume.pdf"
 
 function App() {
 
@@ -197,7 +197,7 @@ function App() {
           </span>
           <BsFileText
             className="icon" 
-            onClick={()=>window.open("./DevinMullinResume.pdf")} 
+            onClick={()=>window.open(DevinMullinResume)} 
             alt="Resume"
             style={{cursor: "pointer"}}/>
       </div>
