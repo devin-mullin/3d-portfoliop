@@ -212,7 +212,7 @@ function App() {
           </span>
           <BsMedium 
             className="icon" 
-            onClick={()=>window.open("https://medium.com/@dmullinator ")} 
+            onClick={()=>window.open("https://medium.com/@dmullinator")} 
             alt="Medium"
             style={{cursor: "pointer"}}/>
           <span>
@@ -220,7 +220,7 @@ function App() {
           </span>
           <BsFileText
             className="icon" 
-            onClick={()=>window.open("https://medium.com/@dmullinator ")} 
+            onClick={()=>window.open("/src/DevinMullinResume.pdf")} 
             alt="Resume"
             style={{cursor: "pointer"}}/>
       </div>
