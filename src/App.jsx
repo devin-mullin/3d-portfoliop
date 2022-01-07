@@ -286,7 +286,10 @@ function App() {
             ◻ New Orleans => Austin
             <br/>
             <br/>
-            ◻ former system administrator / current software engineer
+            ◻ figuring how to live above sea-level
+            <br/>
+            <br/>
+            ◻ 7+ years in tech, lifelong 'computer guy' 
             <br/>
             <br/>
             ◻ avid learner of ~knowledge~, top 1% wikipedia reader, current stack overflow lurker, future stack overflow commenter
