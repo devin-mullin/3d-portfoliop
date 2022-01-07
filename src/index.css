@@ -37,6 +37,7 @@ body {
 section {
   grid-column: 5 / 8;
   padding: 1rem;
+  border-radius: 25px;
   width: 600px;
   background: rgba(0, 0, 0, 0.5);
   text-shadow: 0 0 5px #000000, 0 0 4px #000000;

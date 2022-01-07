@@ -7,7 +7,7 @@ import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
 import basketball from './pics/basketball.jpg'
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsMedium, BsFileText } from 'react-icons/bs'
 import { send } from 'emailjs-com';
 
 
@@ -192,6 +192,40 @@ function App() {
         <h4>software developer</h4>
       </header>
       <section>
+        <div className="icons">
+          <br/>
+          <BsLinkedin 
+            className="icon" 
+            onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")}
+            alt="LinkedIn" 
+            style={{cursor: "pointer"}}/>
+          <span>
+             
+          </span>
+          <BsGithub 
+            className="icon" 
+            onClick={()=>window.open("https://github.com/devin-mullin")} 
+            alt="GitHub"
+            style={{cursor: "pointer"}}/>
+          <span>
+             
+          </span>
+          <BsMedium 
+            className="icon" 
+            onClick={()=>window.open("https://medium.com/@dmullinator ")} 
+            alt="Medium"
+            style={{cursor: "pointer"}}/>
+          <span>
+             
+          </span>
+          <BsFileText
+            className="icon" 
+            onClick={()=>window.open("https://medium.com/@dmullinator ")} 
+            alt="Resume"
+            style={{cursor: "pointer"}}/>
+      </div>
+    </section>
+      <section>
         <strong>skills:</strong>
         <br/>
         ◻ React, JavaScript, Ruby, SQL, PowerShell
@@ -297,15 +331,7 @@ function App() {
   <button className="button" type='submit'>Submit</button>
 </form>
       </section>
-<section>
-<div className="icons">
-      <br/>
-      <BsLinkedin className="icon" onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")} style={{cursor: "pointer"}}/>
-      <br/>
-      <BsGithub className="icon" onClick={()=>window.open("https://github.com/devin-mullin")} style={{cursor: "pointer"}}/>
-      <br/>
-    </div>
-</section>
+
     </body>
   )
 }

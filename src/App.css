@@ -108,6 +108,15 @@ button {
 
 .icon {
   margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 2s ease,
+        
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  color: aqua
 }
 
 .button {
@@ -117,7 +126,8 @@ button {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 18px;
   color: white;
-  transform: translate(0);
+  transition: background-image .5s ease,
+              transform .5s;
   background-image: linear-gradient(45deg, #4568DC , #B06AB3);
 	padding: 20px 40px;
 	border-radius: 5px;
@@ -132,6 +142,7 @@ button {
 .button:hover{
   background-image: linear-gradient(-45deg, #4568DC , #B06AB3);
   box-shadow: 0 12px 24px rgba(gray, 0.1);
+  transform: scale(1.1);
   .text
     background-image: linear-gradient(-45deg, #4568DC , #B06AB3)
 }
