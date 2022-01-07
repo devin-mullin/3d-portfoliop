@@ -50,35 +50,23 @@ function App() {
   };
 
   useEffect(()=>{ 
+
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000)
-  const renderer = new THREE.WebGLRenderer()
+  const renderer = new THREE.WebGLRenderer({ antialias: false })
 
   renderer.setPixelRatio( window.devicePixelRatio )
   renderer.setSize( window.innerWidth, window.innerHeight)
   document.body.appendChild( renderer.domElement)
+
   const render = () =>{
   TWEEN.update()
   renderer.render( scene, camera )
   }
-//   const verticesOfCube = [
-//     -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
-//     -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
-// ];
-
-// const indicesOfFaces = [
-//     2,1,0,    0,3,2,
-//     0,4,7,    7,3,0,
-//     0,1,5,    5,4,0,
-//     1,2,6,    6,5,1,
-//     2,3,7,    7,6,2,
-//     4,5,6,    6,7,4
-// ];
-  
 
   const polyTexture = new THREE.TextureLoader().load(medusa)
-  const geometry = new THREE.SphereGeometry(3, 26, 26)
-  const material = new THREE.MeshStandardMaterial( { 
+  const geometry = new THREE.SphereBufferGeometry(3, 26, 26)
+  const material = new THREE.MeshBasicMaterial( { 
     map: polyTexture
   } )
   const poly = new THREE.Mesh( geometry, material )
@@ -89,7 +77,7 @@ function App() {
   camera.position.z = 10
 
   const polyTexture2 = new THREE.TextureLoader().load(test)
-  const material2 = new THREE.MeshStandardMaterial( { 
+  const material2 = new THREE.MeshBasicMaterial( { 
     map: polyTexture2
   } )
   const poly2 = new THREE.Mesh( geometry, material2 )
@@ -99,7 +87,7 @@ function App() {
   poly2.position.setX(15)
 
   const polyTexture3 = new THREE.TextureLoader().load(basketball)
-  const material3 = new THREE.MeshStandardMaterial( { 
+  const material3 = new THREE.MeshBasicMaterial( { 
     map: polyTexture3
   } )
   const poly3 = new THREE.Mesh( geometry, material3 )
@@ -108,24 +96,15 @@ function App() {
   poly3.position.z = 80
   poly3.position.setX(-5)
 
-
-
-  const pointLight = new THREE.PointLight(0xffffff)
-  pointLight.position.set(10, 10, 10)
-
   const ambientLight = new THREE.AmbientLight(0xffffff)
 
   scene.add(ambientLight)
 
-  const lightHelper = new THREE.PointLightHelper(pointLight)
-  const gridHelper = new THREE.GridHelper(200, 50)
-  // scene.add(lightHelper, gridHelper)
-
   const controls = new OrbitControls(camera, renderer.domElement)
 
   function newStar(){
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24)
-    const material = new THREE.MeshPhongMaterial( { 
+    const geometry = new THREE.SphereBufferGeometry(0.25, 24, 24)
+    const material = new THREE.MeshBasicMaterial( { 
       color: 0x00ffff,
     })
     const star = new THREE.Mesh( geometry, material )
@@ -153,7 +132,7 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-    camera.position.z = top * -0.06
+    camera.position.z = top * -0.045
     camera.position.x = top * -0.0025
     camera.rotation.y = top * -0.0025
   }
@@ -179,7 +158,7 @@ function App() {
 
   animate()
 },[])
-
+  
 
 
   return (
@@ -258,7 +237,7 @@ function App() {
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
           <br/>
-          a run tracker for the incredibly popular (and supposedly amazing, i still need to play it) game Hades. built with React frontend & Rails/Sinatra backend
+          a run tracker for the incredibly popular & critically-acclaimed game Hades (I still need to play it!). frontend built with React, backend built with Ruby/Sinatra
         </section>
         <section>
           <strong>experience:</strong>
@@ -303,6 +282,8 @@ function App() {
     
     <section>
     <strong>contact:</strong>
+    <br/>
+    <br/>
   <form onSubmit={onSubmit}>
     <textarea
     type='text'
