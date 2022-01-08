@@ -206,10 +206,10 @@ function App() {
         <strong>skills:</strong>
         <br/>
         <br/>
-        ◻ React, JavaScript, Ruby, PowerShell
+        ◻ React, JavaScript, Ruby on Rails, PowerShell
         <br/>
         <br/>
-        ◻ three.js, Rails, Sinatra, SQLite, ActiveRecord
+        ◻ three.js, Sinatra, SQLite, ActiveRecord
         <br/>
         <br/>
         ◻ Postman, JIRA, Ubuntu, Vite, Git, Windows Server
