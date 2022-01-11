@@ -173,7 +173,7 @@ function App() {
           <br/>
           <BsLinkedin 
             className="icon" 
-            onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin-753104113/")}
+            onClick={()=>window.open("https://www.linkedin.com/in/devin-mullin/")}
             alt="LinkedIn" 
             style={{cursor: "pointer"}}/>
           <span>
