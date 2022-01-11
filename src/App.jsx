@@ -218,7 +218,7 @@ function App() {
           <strong>projects:</strong>
           <br />
           <br /> 
-          <strong><a className="link" href="https://www.youtube.com/watch?v=-rWUDwGAKxE">devyleague fantasy basketball</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
+          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo">devyleague fantasy basketball</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
           <br/>
           frontend built with React, Redux Toolkit, and React-Bootstrap. backend built with Rails, ActiveRecord, SQLite3, & JWT auth
           <br/>
