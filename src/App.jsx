@@ -218,7 +218,7 @@ function App() {
           <strong>projects:</strong>
           <br />
           <br /> 
-          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo">devyleague fantasy basketball</a></strong> | <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
+          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo">devyleague fantasy basketball</a></strong> | GitHub: <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
           <br/>
           frontend built with React, Redux Toolkit, and React-Bootstrap. backend built with Rails, ActiveRecord, SQLite3, & JWT auth
           <br/>
@@ -226,14 +226,14 @@ function App() {
           roadmap includes user league creation, trade functionality, and live game score / injury updates 
           <br/>
           <br/>
-          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong> | <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2">frontend</a>
+          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong> | GitHub: <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2">frontend</a>
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/scott-donnan/">Scott Donnan</a>
           <br/>
           dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
           <br/>
           <br/>
-          <strong><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">hades run tracker</a></strong> | <a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
+          <strong>hades run tracker</strong><span> | GitHub: </span><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">frontend</a> | <a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
           <br/>
           partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
           <br/>
