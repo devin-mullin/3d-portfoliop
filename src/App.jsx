@@ -13,6 +13,16 @@ import { send } from 'emailjs-com';
 import DevinMullinResume from "/src/DevinMullinResume.pdf"
 
 function App() {
+  const [isDesktop, setIsDesktop] = useState(false)
+
+  useEffect(() => {
+    if(window.innerWidth > 1450){
+      setIsDesktop(true)
+    } else {
+      setIsDesktop(false)
+    }
+  },[]);
+
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -153,9 +163,13 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-    particlesMesh.rotation.z += 0.0004
-    particlesMesh.rotation.y += 0.0004
-    
+    if(isDesktop === true){
+      particlesMesh.rotation.z += 0.0009
+      particlesMesh.rotation.y += 0.0009
+    } else {
+      particlesMesh.rotation.z += 0.0004
+      particlesMesh.rotation.y += 0.0004
+    }
     controls.update()
     
     render()
