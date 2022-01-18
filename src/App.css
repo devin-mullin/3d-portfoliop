@@ -105,21 +105,27 @@ button {
 
 .icons {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .icon {
   margin: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  transition: color .15s ease,
-  transform .2s ease
+  transition: transform .2s ease-in-out,
+  color .3s ease-in, color .6s ease-out
         
 }
 
 .icon:hover {
   transform: scale(1.5);
   color: aqua
+}
+
+.project {
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.4);   
 }
 
 .button {
@@ -136,9 +142,7 @@ button {
   .text
   webkit-background-clip: text;
   webkit-text-fill-color: transparent;
-  transition: all 1s ease-in-out;
-  background-image: linear-gradient(45deg, #4568DC , #B06AB3);
- 
+  transition: all .5s ease-in-out
 }
 
 

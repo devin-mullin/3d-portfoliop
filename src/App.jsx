@@ -247,51 +247,91 @@ function App() {
         <section>
           <strong>projects:</strong>
           <br />
-          <br /> 
-          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo">devyleague fantasy basketball</a></strong> | GitHub: <a className="link" href="https://github.com/devin-mullin/basketball-frontend">frontend</a> | <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend">backend</a>  
+          <br />
+          <div className="project"> 
+          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo"
+          target="_blank" rel="noopener noreferrer">devyleague fantasy basketball</a>
+          <br/></strong>GitHub: <span> </span> 
+          <a className="link" href="https://github.com/devin-mullin/basketball-frontend"
+          target="_blank" rel="noopener noreferrer">frontend</a><span> | </span>
+          <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend"
+          target="_blank" rel="noopener noreferrer">backend</a>  
           <br/>
-          frontend built with React, Redux Toolkit, and React-Bootstrap. backend built with Rails, ActiveRecord, SQLite3, & JWT auth
+          <br/>
+          frontend built with React, Redux Toolkit, YouTube's API, and React-Bootstrap. backend built with Ruby on Rails, ActiveRecord, SQLite3, & JWT auth
           <br/>
           <br/>
           roadmap includes user league creation, trade functionality, and live game score / injury updates 
           <br/>
+          </div>
           <br/>
-          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/">reaction-ary</a></strong> | GitHub: <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2">frontend</a>
+          <div className="project"> 
+          <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/"
+          target="_blank" rel="noopener noreferrer">reaction-ary</a></strong>
           <br/>
-          partnered with <a className="link" href="https://www.linkedin.com/in/scott-donnan/">Scott Donnan</a>
+          <span>GitHub: </span>
+          <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2"
+          target="_blank" rel="noopener noreferrer">frontend</a>
+          <br/>
+          partnered with <a className="link" href="https://www.linkedin.com/in/scott-donnan/"
+          target="_blank" rel="noopener noreferrer">Scott Donnan</a>
+          <br/>
           <br/>
           dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
           <br/>
+          </div>
           <br/>
-          <strong>hades run tracker</strong><span> | GitHub: </span><a className="link" href="https://github.com/devin-mullin/P3-FrontEnd">frontend</a> | <a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project">backend</a>
+          <div className="project"> 
+          <strong>hades run tracker</strong>
           <br/>
-          partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
+          <span>GitHub: </span>
+          <a className="link" href="https://github.com/devin-mullin/P3-FrontEnd"
+          target="_blank" rel="noopener noreferrer">frontend</a><span> | </span> 
+          <a className="link" href="https://github.com/UncleDadMom/phase-3-sinatra-react-project"
+          target="_blank" rel="noopener noreferrer">backend</a>
+          <br/>
+          partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/"
+          target="_blank" rel="noopener noreferrer">Patrick Wu</a>
+          <br/>
           <br/>
           a run tracker for the incredibly popular & critically-acclaimed game Hades (I still need to play it!). frontend built with React, backend built with Ruby/Sinatra
           <br/>
+          </div>
           <br/>
+          <div className="project"> 
           <strong>this website</strong>
           <br/>
-          built with React, three.js, and CSS. roadmap includes interactive background animation and a music player
+          <br/>
+          built with React, three.js, and CSS. 
+          <br/>
+          <br/>
+          roadmap includes interactive background animation and a music player
+          </div>
         </section>
         <section>
           <strong>experience:</strong>
           <br/>
           <br/>
+          <div className="project">
           <strong>DM Digital, LLC</strong> | Owner
           <br/>
           2020 - present
           <br/>
+          </div>
           <br/>
+          <div className="project">
           <strong>Testronic</strong> | QA Technician
           <br/>
           Mar 2021 - Aug 2021
           <br/>
+          </div>
           <br/>
+          <div className="project">
           <strong>Mullin Landscape</strong> | System Administrator
           <br/>
           2015 - 2020
-          <br/>     
+          <br/>
+          </div>     
         </section>
         <section>
             <strong>about:</strong>
