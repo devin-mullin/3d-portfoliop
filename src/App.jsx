@@ -22,9 +22,6 @@ function App() {
     }
   },[]);
 
-  window.addEventListener('touch', function (event) {
-    event.preventDefault()
-  }, {passive: false})
 
   const [toSend, setToSend] = useState({
     from_name: '',
