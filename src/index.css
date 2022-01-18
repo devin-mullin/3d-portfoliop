@@ -1,10 +1,42 @@
 
+
 canvas {
   display: block;
+  background-image: url('./pics/vwave.jpg');
+  background-size: 100vw 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 110%
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 768px) {
+  canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./pics/vwave.jpg');
+    background-size: cover cover;
+    z-index: -1;
+  }
+  canvas:after {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-position: inherit;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 :root {

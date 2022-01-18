@@ -22,6 +22,9 @@ function App() {
     }
   },[]);
 
+  window.addEventListener('touch', function (event) {
+    event.preventDefault()
+  }, {passive: false})
 
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -63,16 +66,19 @@ function App() {
 
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000)
-  const renderer = new THREE.WebGLRenderer({ antialias: false })
+  const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true })
 
   renderer.setPixelRatio( window.devicePixelRatio )
   renderer.setSize( window.innerWidth, window.innerHeight)
+  renderer.setClearColor(0x000000, 0)
   document.body.appendChild( renderer.domElement)
 
   const render = () =>{
   TWEEN.update()
   renderer.render( scene, camera )
   }
+
+
 
   const polyTexture = new THREE.TextureLoader().load(medusa)
   const geometry = new THREE.SphereBufferGeometry(3, 26, 26)
@@ -129,8 +135,6 @@ function App() {
   particlesMesh.position.z = 5
   scene.add(particlesMesh)
 
-  const texture = new THREE.TextureLoader().load(vwave)
-  scene.background = texture
 
   function cameraScroll(){ 
     const top = document.body.getBoundingClientRect().top
