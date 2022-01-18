@@ -6,6 +6,7 @@ import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
+import sun from './pics/sun.png'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub, BsMedium, BsFileText } from 'react-icons/bs'
 import { send } from 'emailjs-com';
@@ -65,16 +66,16 @@ function App() {
   }
 
   const polyTexture = new THREE.TextureLoader().load(medusa)
-  const geometry = new THREE.SphereBufferGeometry(3, 26, 26)
+  const geometry = new THREE.SphereBufferGeometry(3, 13, 13)
   const material = new THREE.MeshBasicMaterial( { 
     map: polyTexture
   } )
   const poly = new THREE.Mesh( geometry, material )
   
   scene.add(poly)
-  poly.position.z = 5
+  poly.position.z = 2
   poly.position.setX(-10)
-  camera.position.z = 10
+  camera.position.z = 2
 
   const polyTexture2 = new THREE.TextureLoader().load(test)
   const material2 = new THREE.MeshBasicMaterial( { 
@@ -83,7 +84,7 @@ function App() {
   const poly2 = new THREE.Mesh( geometry, material2 )
   
   scene.add(poly2)
-  poly2.position.z = 40
+  poly2.position.z = 8
   poly2.position.setX(15)
 
   const polyTexture3 = new THREE.TextureLoader().load(basketball)
@@ -93,8 +94,8 @@ function App() {
   const poly3 = new THREE.Mesh( geometry, material3 )
   
   scene.add(poly3)
-  poly3.position.z = 80
-  poly3.position.setX(-5)
+  poly3.position.z = 15
+  poly3.position.setX(-15)
 
   const ambientLight = new THREE.AmbientLight(0xffffff)
 
@@ -102,20 +103,22 @@ function App() {
 
   const controls = new OrbitControls(camera, renderer.domElement)
 
-  function newStar(){
-    const geometry = new THREE.SphereBufferGeometry(0.25, 24, 24)
-    const material = new THREE.MeshBasicMaterial( { 
-      color: 0x00ffff,
-    })
-    const star = new THREE.Mesh( geometry, material )
-    const [x, y, z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread( 100 ))
-    
-    star.position.set(x, y, z)
 
-    scene.add(star)
+  const sphereMaterial = new THREE.PointsMaterial({
+    size: 0.019,
+    color: 0x00ffff
+  })
+  const particlesGeometry = new THREE.BufferGeometry;
+  const particlesCount = 40000
+  const position = new Float32Array(particlesCount * 3)
+  for(let p = 0; p < particlesCount * 3; p++) {
+    position[p] = (Math.random() - 0.5) * 50
   }
+  particlesGeometry.setAttribute('position', new THREE.BufferAttribute(position, 3))
 
-  Array(500).fill().forEach(newStar)
+  const particlesMesh = new THREE.Points(particlesGeometry, sphereMaterial)
+  particlesMesh.position.z = 5
+  scene.add(particlesMesh)
 
   const texture = new THREE.TextureLoader().load(vwave)
   scene.background = texture
@@ -132,7 +135,7 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-    camera.position.z = top * -0.045
+    camera.position.z = top * -0.0095
     camera.position.x = top * -0.0025
     camera.rotation.y = top * -0.0025
   }
@@ -150,9 +153,11 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-
+    particlesMesh.rotation.z += 0.0004
+    particlesMesh.rotation.y += 0.0004
+    
     controls.update()
-
+    
     render()
   }
 
