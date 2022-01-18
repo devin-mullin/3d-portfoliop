@@ -76,7 +76,7 @@ function App() {
   }
 
   const polyTexture = new THREE.TextureLoader().load(medusa)
-  const geometry = new THREE.SphereBufferGeometry(3, 13, 13)
+  const geometry = new THREE.SphereBufferGeometry(3, 26, 26)
   const material = new THREE.MeshBasicMaterial( { 
     map: polyTexture
   } )
