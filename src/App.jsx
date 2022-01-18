@@ -6,7 +6,6 @@ import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
-import sun from './pics/sun.png'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub, BsMedium, BsFileText } from 'react-icons/bs'
 import { send } from 'emailjs-com';
@@ -83,7 +82,7 @@ function App() {
   const poly = new THREE.Mesh( geometry, material )
   
   scene.add(poly)
-  poly.position.z = 2
+  poly.position.z = 0
   poly.position.setX(-10)
   camera.position.z = 2
 
@@ -104,7 +103,7 @@ function App() {
   const poly3 = new THREE.Mesh( geometry, material3 )
   
   scene.add(poly3)
-  poly3.position.z = 15
+  poly3.position.z = 17
   poly3.position.setX(-15)
 
   const ambientLight = new THREE.AmbientLight(0xffffff)
@@ -145,9 +144,20 @@ function App() {
     poly3.rotation.x += 0.01
     poly3.rotation.y += 0.005
     poly3.rotation.z += 0.01
-    camera.position.z = top * -0.0095
-    camera.position.x = top * -0.0025
-    camera.rotation.y = top * -0.0025
+    if(isDesktop === true){
+      particlesMesh.rotation.z += 0.009
+      particlesMesh.rotation.y += 0.009
+      camera.position.z = top * -0.0095
+      camera.position.x = top * -0.0025
+      camera.rotation.y = top * -0.0025
+    } else {
+      particlesMesh.rotation.z += 0.003
+      particlesMesh.rotation.y += 0.003
+      camera.position.z = top * -0.015
+      camera.position.x = top * -0.0025
+      camera.rotation.y = top * -0.0025
+    }
+
   }
 
   document.body.onscroll = cameraScroll
@@ -167,8 +177,8 @@ function App() {
       particlesMesh.rotation.z += 0.0009
       particlesMesh.rotation.y += 0.0009
     } else {
-      particlesMesh.rotation.z += 0.0004
-      particlesMesh.rotation.y += 0.0004
+      particlesMesh.rotation.z += 0.00035
+      particlesMesh.rotation.y += 0.00035
     }
     controls.update()
     
@@ -257,6 +267,11 @@ function App() {
           partnered with <a className="link" href="https://www.linkedin.com/in/patrick-wu-7a5194b8/">Patrick Wu</a>
           <br/>
           a run tracker for the incredibly popular & critically-acclaimed game Hades (I still need to play it!). frontend built with React, backend built with Ruby/Sinatra
+          <br/>
+          <br/>
+          <strong>this website</strong>
+          <br/>
+          built with React, three.js, and CSS. roadmap includes interactive background animation and a music player
         </section>
         <section>
           <strong>experience:</strong>
@@ -327,7 +342,7 @@ function App() {
     name='message'
     className='message'
     wrap="soft"
-    placeholder="what's up?"
+    placeholder="let's have a conversation"
     value={toSend.message}
     onChange={handleChange}
   />
