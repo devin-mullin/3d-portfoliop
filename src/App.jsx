@@ -252,7 +252,7 @@ function App() {
         ◻ three.js, Sinatra, SQLite, ActiveRecord
         <br/>
         <br/>
-        ◻ Postman, JIRA, Ubuntu, Vite, Git, Windows Server
+        ◻ Postman, JIRA, Ubuntu, Git, Windows Server
         </section>
         <section>
           <strong>projects:</strong>
