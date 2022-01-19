@@ -3,7 +3,6 @@ import './App.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
-import vwave from './pics/vwave.jpg'
 import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
 import basketball from './pics/basketball.jpg'
@@ -121,7 +120,7 @@ function App() {
     color: 0x00ffff
   })
   const particlesGeometry = new THREE.BufferGeometry;
-  const particlesCount = 40000
+  const particlesCount = 20000
   const position = new Float32Array(particlesCount * 3)
   for(let p = 0; p < particlesCount * 3; p++) {
     position[p] = (Math.random() - 0.5) * 50
@@ -132,6 +131,9 @@ function App() {
   particlesMesh.position.z = 5
   scene.add(particlesMesh)
 
+ const particlesMesh2 = new THREE.Points(particlesGeometry, sphereMaterial)
+ particlesMesh2.position.z = 50
+ scene.add(particlesMesh2)
 
   function cameraScroll(){ 
     const top = document.body.getBoundingClientRect().top
@@ -148,12 +150,16 @@ function App() {
     if(isDesktop === true){
       particlesMesh.rotation.z += 0.009
       particlesMesh.rotation.y += 0.009
+      particlesMesh2.rotation.z += 0.009
+      particlesMesh2.rotation.y += 0.009
       camera.position.z = top * -0.0095
       camera.position.x = top * -0.0025
       camera.rotation.y = top * -0.0025
     } else {
       particlesMesh.rotation.z += 0.003
       particlesMesh.rotation.y += 0.003
+      particlesMesh2.rotation.z += 0.003
+      particlesMesh2.rotation.y += 0.003
       camera.position.z = top * -0.015
       camera.position.x = top * -0.0025
       camera.rotation.y = top * -0.0025
@@ -177,9 +183,13 @@ function App() {
     if(isDesktop === true){
       particlesMesh.rotation.z += 0.0009
       particlesMesh.rotation.y += 0.0009
+      particlesMesh2.rotation.z += 0.0009
+      particlesMesh2.rotation.y += 0.0009
     } else {
-      particlesMesh.rotation.z += 0.00035
-      particlesMesh.rotation.y += 0.00035
+      particlesMesh.rotation.z += 0.0005
+      particlesMesh.rotation.y += 0.0005
+      particlesMesh2.rotation.z += 0.0005
+      particlesMesh2.rotation.y += 0.0005
     }
     controls.update()
     
