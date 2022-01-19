@@ -315,8 +315,10 @@ function App() {
           built with React, three.js, and CSS. 
           <br/>
           <br/>
-          roadmap includes interactive background animation and a music player
+          roadmap includes interactive background animation and a music player (still experimental, but you can check out some of the progress <a className="link" href="https://amazing-liskov-1d721d.netlify.app"
+          target="_blank" rel="noopener noreferrer">here</a>)
           </div>
+          <br/>
         </section>
         <section>
           <strong>experience:</strong>
