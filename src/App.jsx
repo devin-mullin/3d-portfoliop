@@ -205,7 +205,7 @@ function App() {
 <body>
     
       <header>
-        <h1>devin mullin</h1>
+        <h1>Devin Mullin</h1>
         <h4>software developer</h4>
       </header>
       <section>
