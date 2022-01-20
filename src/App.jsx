@@ -259,7 +259,7 @@ function App() {
           <br />
           <br />
           <div className="project"> 
-          <strong><a className="link" href="https://www.youtube.com/watch?v=Yc3Y0jjsoAo"
+          <strong><a className="link" href="https://www.youtube.com/watch?v=08BQZd9fZko"
           target="_blank" rel="noopener noreferrer">devyleague fantasy basketball</a>
           <br/></strong>GitHub: <span> </span> 
           <a className="link" href="https://github.com/devin-mullin/basketball-frontend"
