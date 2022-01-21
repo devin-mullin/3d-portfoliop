@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { TWEEN } from 'three/examples/jsm/libs/tween.module.min'
 import medusa from './pics/medusa.jpg'
 import test from './pics/test.jpg'
+import vwave from './pics/vwave.jpg'
 import basketball from './pics/basketball.jpg'
 import { BsLinkedin, BsGithub, BsMedium, BsFileText } from 'react-icons/bs'
 import { send } from 'emailjs-com';
@@ -61,6 +62,7 @@ function App() {
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000)
   const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true })
+  const texture = new THREE.TextureLoader().load(vwave)
 
   useEffect(()=>{ 
 
@@ -208,7 +210,7 @@ function onWindowResize() {
 
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
-
+  scene.background = texture
 }
 
   return (
