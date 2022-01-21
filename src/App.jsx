@@ -289,7 +289,7 @@ function onWindowResize() {
           <br/>
           <div className="project"> 
           <strong><a className="link" href="https://fervent-torvalds-d8a56c.netlify.app/"
-          target="_blank" rel="noopener noreferrer">reaction-ary</a></strong>
+          target="_blank" rel="noopener noreferrer">react-ionary</a></strong>
           <br/>
           <span>GitHub: </span>
           <a className="link" href="https://github.com/devin-mullin/phase-2-project-dictionary/tree/main/dictionary-phase-2"
