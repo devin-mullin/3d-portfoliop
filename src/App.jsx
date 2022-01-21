@@ -58,18 +58,18 @@ function App() {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
-  useEffect(()=>{ 
-
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000)
   const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true })
+
+  useEffect(()=>{ 
 
   renderer.setPixelRatio( window.devicePixelRatio )
   renderer.setSize( window.innerWidth, window.innerHeight)
   renderer.setClearColor(0x000000, 0)
   document.body.appendChild( renderer.domElement)
 
-  const render = () =>{
+  function render() {
   TWEEN.update()
   renderer.render( scene, camera )
   }
@@ -196,10 +196,20 @@ function App() {
     render()
   }
 
-  animate()
+      animate()
 },[])
   
+window.addEventListener( 'resize', onWindowResize, false );
 
+		
+function onWindowResize() {
+  
+  camera.aspect = window.innerWidth/ window.innerHeight;
+
+  camera.updateProjectionMatrix();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
 
   return (
 <body>

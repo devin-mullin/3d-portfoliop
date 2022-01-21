@@ -1,15 +1,4 @@
- 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .player {
   height: 100px;
@@ -71,7 +60,7 @@ button {
   padding-left: 2px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .form{
     width: 100%;
   }
@@ -86,7 +75,7 @@ button {
   border-radius: 10px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .input{
     width: 75%;
   }
@@ -101,7 +90,7 @@ button {
   border-radius: 10px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .message{
     width: 75%;
   }
@@ -111,6 +100,7 @@ button {
   display: flex;
   justify-content: center;
 }
+
 
 .icon {
   margin: 5px;
