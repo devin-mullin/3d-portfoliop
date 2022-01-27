@@ -271,20 +271,27 @@ function onWindowResize() {
           <br />
           <br />
           <div className="project"> 
-          <strong><a className="link" href="https://www.youtube.com/watch?v=08BQZd9fZko"
+          <strong><a className="link" href="https://devyleague.netlify.app/"
           target="_blank" rel="noopener noreferrer">devyleague fantasy basketball</a>
           <br/></strong>GitHub: <span> </span> 
           <a className="link" href="https://github.com/devin-mullin/basketball-frontend"
           target="_blank" rel="noopener noreferrer">frontend</a><span> | </span>
           <a className="link" href="https://github.com/devin-mullin/basketball-trade-fantasy-backend"
-          target="_blank" rel="noopener noreferrer">backend</a>  
+          target="_blank" rel="noopener noreferrer">backend</a>
+          <br/><a className="link" href="https://www.youtube.com/watch?v=08BQZd9fZko"
+          target="_blank" rel="noopener noreferrer">demo</a>  
           <br/>
           <br/>
-          frontend built with React, Redux Toolkit, YouTube's API, and React-Bootstrap. backend built with Ruby on Rails, ActiveRecord, SQLite3, & JWT auth
+          frontend built with React, Redux Toolkit, YouTube's API, & a blend of custom CSS + React-Bootstrap
           <br/>
           <br/>
-          roadmap includes user league creation, trade functionality, and live game score / injury updates 
+          backend built with Ruby on Rails, ActiveRecord, SQLite3, & JWT auth
           <br/>
+          <br/>
+          roadmap includes mobile responsive design, user league creation, trade functionality, head-to-head user matchups, & live game score / injury updates 
+          <br/>
+          <br/>
+          note: I'm building this because I love basketball, & I don't currently have the means or wherewithal to create an NBA 2K alternative, lol 
           </div>
           <br/>
           <div className="project"> 
@@ -299,8 +306,10 @@ function onWindowResize() {
           target="_blank" rel="noopener noreferrer">Scott Donnan</a>
           <br/>
           <br/>
-          dictionary app built with React, Styled Components, and the Merriam-Webster Dictionary API
+          built with React, Styled Components, & the Merriam-Webster Dictionary API
           <br/>
+          <br/>
+          dictionary app ideated with the intention of getting practice with deeply nested resources, as well as accessibility functionality (specifically the word pronunciation feature) 
           </div>
           <br/>
           <div className="project"> 
@@ -316,7 +325,10 @@ function onWindowResize() {
           target="_blank" rel="noopener noreferrer">Patrick Wu</a>
           <br/>
           <br/>
-          a run tracker for the incredibly popular & critically-acclaimed game Hades (I still need to play it!). frontend built with React, backend built with Ruby/Sinatra
+          frontend built with React, backend built with Ruby/Sinatra
+          <br/>
+          <br/>
+          a run tracker for the incredibly popular & critically-acclaimed game Hades (I still need to play it!)
           <br/>
           </div>
           <br/>
@@ -324,11 +336,14 @@ function onWindowResize() {
           <strong>this website</strong>
           <br/>
           <br/>
-          built with React, three.js, and CSS. 
+          built with React, three.js, & custom CSS. 
           <br/>
           <br/>
-          roadmap includes fully interactive background animation and a music player (still experimental, but you can check out some of the progress <a className="link" href="https://amazing-liskov-1d721d.netlify.app"
-          target="_blank" rel="noopener noreferrer">here</a>)
+          roadmap includes interactive background animation and a music player - still experimental, check out some of the progress <a className="link" href="https://amazing-liskov-1d721d.netlify.app"
+          target="_blank" rel="noopener noreferrer"><strong>here</strong></a>
+          <br/>
+          <br/>
+          note: the audiovisual section is being tweaked at least weekly. the intent here is to practice three.js & to eventually create a sort of abstract art project that makes me go "whoa, that's cool"
           </div>
           <br/>
         </section>
