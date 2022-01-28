@@ -261,7 +261,7 @@ function onWindowResize() {
         ◻ React, JavaScript, Ruby on Rails, PowerShell
         <br/>
         <br/>
-        ◻ three.js, Sinatra, SQLite, ActiveRecord
+        ◻ three.js, Sinatra, SQLite, PostgreSQL, ActiveRecord
         <br/>
         <br/>
         ◻ Postman, JIRA, Ubuntu, Git, Windows Server
@@ -285,7 +285,7 @@ function onWindowResize() {
           frontend built with React, Redux Toolkit, YouTube's API, & a blend of custom CSS + React-Bootstrap
           <br/>
           <br/>
-          backend built with Ruby on Rails, ActiveRecord, SQLite3, & JWT auth
+          backend built with Ruby on Rails, ActiveRecord, PostgreSQL, & JWT auth
           <br/>
           <br/>
           roadmap includes mobile responsive design, user league creation, trade functionality, head-to-head user matchups, & live game score / injury updates 
@@ -343,7 +343,7 @@ function onWindowResize() {
           target="_blank" rel="noopener noreferrer"><strong>here</strong></a>
           <br/>
           <br/>
-          note: the audiovisual section is being tweaked at least weekly. the intent here is to practice three.js & to eventually create a sort of abstract art project that makes me go "whoa, that's cool"
+          note: audiovisual section is being tweaked at least weekly. the intent here is to practice three.js & to eventually create a sort of abstract art project that makes me go "whoa, that's cool"
           </div>
           <br/>
         </section>
