@@ -352,7 +352,7 @@ function onWindowResize() {
           <br/>
           <br/>
           <div className="project">
-          <strong>DM Digital, LLC</strong> | Owner
+          <strong>DM Digital, LLC</strong> | Freelancer / Owner
           <br/>
           2020 - present
           <br/>
