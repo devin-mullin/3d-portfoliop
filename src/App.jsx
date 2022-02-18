@@ -313,6 +313,24 @@ function onWindowResize() {
           </div>
           <br/>
           <div className="project"> 
+          <strong><a className="link" href="https://amazing-liskov-1d721d.netlify.app"
+          target="_blank" rel="noopener noreferrer">devy's art project</a></strong>
+          <br/>
+          <span>GitHub: </span>
+          <a className="link" href="https://github.com/devin-mullin/artiste"
+          target="_blank" rel="noopener noreferrer">frontend</a>
+          <br/>
+          <br/>
+          built with React, three.js, & custom CSS. 
+          <br/>
+          <br/>
+          roadmap includes more interactive background animation, clickable objects that play different songs I wrote, and anything else I think of - still experimental!
+          <br/>
+          <br/>
+          note: this is being tweaked at least weekly. the intent here is to practice three.js & to eventually create a sort of abstract art project that makes me go "whoa, that's cool"
+          </div>
+          <br/>
+          <div className="project"> 
           <strong>hades run tracker</strong>
           <br/>
           <span>GitHub: </span>
@@ -339,11 +357,6 @@ function onWindowResize() {
           built with React, three.js, & custom CSS. 
           <br/>
           <br/>
-          roadmap includes interactive background animation and a music player - still experimental, check out some of the progress <a className="link" href="https://amazing-liskov-1d721d.netlify.app"
-          target="_blank" rel="noopener noreferrer"><strong>here</strong></a>
-          <br/>
-          <br/>
-          note: audiovisual section is being tweaked at least weekly. the intent here is to practice three.js & to eventually create a sort of abstract art project that makes me go "whoa, that's cool"
           </div>
           <br/>
         </section>
