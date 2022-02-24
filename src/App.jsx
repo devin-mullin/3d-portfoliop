@@ -350,15 +350,6 @@ function onWindowResize() {
           <br/>
           </div>
           <br/>
-          <div className="project"> 
-          <strong>this website</strong>
-          <br/>
-          <br/>
-          built with React, three.js, & custom CSS. 
-          <br/>
-          <br/>
-          </div>
-          <br/>
         </section>
         <section>
           <strong>experience:</strong>
