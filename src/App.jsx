@@ -230,6 +230,7 @@ function App() {
           <br />
           <BsLinkedin
             className="icon"
+            title="my LinkedIn profile"
             onClick={() =>
               window.open("https://www.linkedin.com/in/devin-mullin/")
             }
@@ -239,6 +240,7 @@ function App() {
           <span></span>
           <BsGithub
             className="icon"
+            title="my GitHub profile"
             onClick={() => window.open("https://github.com/devin-mullin")}
             alt="GitHub"
             style={{ cursor: "pointer" }}
@@ -246,6 +248,7 @@ function App() {
           <span></span>
           <BsMedium
             className="icon"
+            title="my Medium profile"
             onClick={() => window.open("https://medium.com/@dmullinator")}
             alt="Medium"
             style={{ cursor: "pointer" }}
@@ -253,6 +256,7 @@ function App() {
           <span></span>
           <BsFileText
             className="icon"
+            title="my RESUME!"
             onClick={() => window.open(DevinMullinResume)}
             alt="Resume"
             style={{ cursor: "pointer" }}
@@ -260,15 +264,26 @@ function App() {
         </div>
       </section>
       <section>
-        <strong>skills:</strong>
+        <strong>about:</strong>
         <br />
         <br />
-        ◻ React, JavaScript, Ruby on Rails, PowerShell
+        ◻ New Orleans => Austin
         <br />
         <br />
-        ◻ three.js, Sinatra, SQLite, PostgreSQL, ActiveRecord
+        ◻ figuring how to live above sea level
         <br />
-        <br />◻ Postman, JIRA, Ubuntu, Git, Windows Server
+        <br />
+        ◻ 7+ years in tech, lifelong 'computer guy'
+        <br />
+        <br />
+        ◻ avid learner of knowledge, top 1% wikipedia reader, current stack
+        overflow lurker, future stack overflow commenter
+        <br />
+        <br />
+        ◻ big on gaming, basketball, and sci-fi / western / horror films
+        <br />
+        <br />◻ comedy writer, former variety show host, former (& sometimes
+        current) amateur music producer
       </section>
       <section>
         <strong>projects:</strong>
@@ -452,6 +467,17 @@ function App() {
         <br />
       </section>
       <section>
+        <strong>skills:</strong>
+        <br />
+        <br />
+        ◻ React, JavaScript, Ruby on Rails, PowerShell
+        <br />
+        <br />
+        ◻ three.js, Sinatra, SQLite, PostgreSQL, ActiveRecord
+        <br />
+        <br />◻ Postman, JIRA, Ubuntu, Git, Windows Server
+      </section>
+      <section>
         <strong>experience:</strong>
         <br />
         <br />
@@ -476,29 +502,6 @@ function App() {
           <br />
         </div>
       </section>
-      <section>
-        <strong>about:</strong>
-        <br />
-        <br />
-        ◻ New Orleans => Austin
-        <br />
-        <br />
-        ◻ figuring how to live above sea level
-        <br />
-        <br />
-        ◻ 7+ years in tech, lifelong 'computer guy'
-        <br />
-        <br />
-        ◻ avid learner of knowledge, top 1% wikipedia reader, current stack
-        overflow lurker, future stack overflow commenter
-        <br />
-        <br />
-        ◻ big on gaming, basketball, and sci-fi / western / horror films
-        <br />
-        <br />◻ comedy writer, former variety show host, former (& sometimes
-        current) amateur music producer
-      </section>
-
       <section>
         <form className="form" onSubmit={onSubmit}>
           <strong>contact:</strong>
