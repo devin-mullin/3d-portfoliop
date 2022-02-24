@@ -179,6 +179,10 @@ sub {
     z-index: -1;
   }
 
+  header {
+    margin-right: 50%;
+  }
+
   body {
     display: flex;
     flex-direction: column;
@@ -191,6 +195,7 @@ sub {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 50%;
     font-size: auto;
     width: 100%;
     background: rgba(0, 0, 0, 0.55);

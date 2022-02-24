@@ -15,7 +15,7 @@ function App() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 1450) {
+    if (screen.width > 1200) {
       setIsDesktop(true);
     } else {
       setIsDesktop(false);
