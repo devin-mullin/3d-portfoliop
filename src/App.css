@@ -57,7 +57,13 @@ button {
 .form {
   padding-top: 2px;
   padding-bottom: 3px;
-  padding-left: 2px
+  padding-left: 2px;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -67,12 +73,16 @@ button {
 }
 
 
+
 .input {
   background-color: black;
   color: white;
   padding: 10px;
   width: 300px;
-  border-radius: 10px
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -85,9 +95,13 @@ button {
   background-color: black;
   color: white;
   padding: 10px;
+  margin-bottom: 10px;
   width: 400px;
   height: 100px;
-  border-radius: 10px
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
