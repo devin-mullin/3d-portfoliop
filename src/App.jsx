@@ -424,47 +424,6 @@ function App() {
           project that makes me go "whoa, that's cool"
         </div>
         <br />
-        <div className="project">
-          <strong>hades run tracker</strong>
-          <br />
-          <span>GitHub: </span>
-          <a
-            className="link"
-            href="https://github.com/devin-mullin/P3-FrontEnd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            frontend
-          </a>
-          <span> | </span>
-          <a
-            className="link"
-            href="https://github.com/UncleDadMom/phase-3-sinatra-react-project"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            backend
-          </a>
-          <br />
-          partnered with{" "}
-          <a
-            className="link"
-            href="https://www.linkedin.com/in/patrick-wu-7a5194b8/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Patrick Wu
-          </a>
-          <br />
-          <br />
-          frontend built with React, backend built with Ruby/Sinatra
-          <br />
-          <br />
-          a run tracker for the incredibly popular & critically-acclaimed game
-          Hades (I still need to play it!)
-          <br />
-        </div>
-        <br />
       </section>
       <section>
         <strong>skills:</strong>
