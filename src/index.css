@@ -1,11 +1,11 @@
-html{
+html {
   min-height: 90%;
 }
 
 canvas {
   display: block;
   vertical-align: top;
-  background-image: url('./pics/vwave.jpg');
+  background-image: url("./pics/vwave.jpg");
   background-size: 100vw 100vh;
   position: fixed;
   top: 0;
@@ -21,13 +21,11 @@ canvas {
   height: 0px;
 }
 
-
-
 :root {
   --dark-bg: rgba(0, 0, 0, 0.5);
   --spacing: 100px;
 
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
@@ -56,43 +54,38 @@ section {
   margin-bottom: var(--spacing);
 }
 
-
 header {
   grid-column: 5 / 8;
   color: white;
-  text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 0 0 5px #ff0000, 0 0 5px #0000ff;
   font-size: 2.5rem;
   margin-bottom: var(--spacing);
 }
 
-
 sub {
   background: var(--dark-bg);
   color: pink;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
   font-size: 1rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
   align-items: center;
 }
 
-
- 
 /* For Tablet View */
-@media screen and (min-device-width: 769px)
-and (max-device-width: 1450px) {
-  canvas{
+@media screen and (min-device-width: 769px) and (max-device-width: 1900px) {
+  canvas {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100vw;
-    background-image: url('./pics/vwave.jpg');
+    background-image: url("./pics/vwave.jpg");
     background-size: cover cover;
     z-index: -1;
   }
   canvas:after {
-    content: '';
+    content: "";
     width: 100vw;
     height: 100vh;
     background-position: inherit;
@@ -104,38 +97,36 @@ and (max-device-width: 1450px) {
     top: 0;
     z-index: -1;
   }
-  header{
+  header {
     grid-column: 6 / 8;
   }
 
-  body{
+  body {
     position: absolute;
     width: 100%;
   }
-  section{
+  section {
     grid-column: 6 / 8;
     font-size: auto;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.55)
+    width: 35vw;
+    background: rgba(0, 0, 0, 0.55);
   }
-
 }
- 
+
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 467px)
-and (orientation: portrait) {
-  canvas{
+@media screen and (max-device-width: 467px) and (orientation: portrait) {
+  canvas {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('./pics/vwave.jpg');
+    background-image: url("./pics/vwave.jpg");
     background-size: cover cover;
     z-index: -1;
   }
   canvas:after {
-    content: '';
+    content: "";
     width: 100vw;
     height: 100vh;
     background-position: inherit;
@@ -147,37 +138,35 @@ and (orientation: portrait) {
     top: 0;
     z-index: -1;
   }
-  header{
+  header {
     grid-column: 3 / 8;
   }
 
-  body{
+  body {
     position: absolute;
   }
-  section{
+  section {
     grid-column: 3 / 8;
     font-size: auto;
     width: 250px;
-    background: rgba(0, 0, 0, 0.55)
+    background: rgba(0, 0, 0, 0.55);
   }
-
 }
- 
+
 /* For Mobile Landscape View */
-@media screen and (max-device-width: 900px)
-and (orientation: landscape) {
-  canvas{
+@media screen and (max-device-width: 900px) and (orientation: landscape) {
+  canvas {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url('./pics/vwave.jpg');
+    background-image: url("./pics/vwave.jpg");
     background-size: cover cover;
     z-index: -1;
   }
   canvas:after {
-    content: '';
+    content: "";
     width: 100vw;
     height: 100vh;
     background-position: inherit;
@@ -190,23 +179,20 @@ and (orientation: landscape) {
     z-index: -1;
   }
 
-
-  body{
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 75%
+    width: 75%;
   }
-  section{
+  section {
     display: flexbox;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: auto;
     width: 100%;
-    background: rgba(0, 0, 0, 0.55)
+    background: rgba(0, 0, 0, 0.55);
   }
-
 }
- 
