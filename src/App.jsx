@@ -419,9 +419,9 @@ function App() {
           of - still experimental!
           <br />
           <br />
-          note: this is being tweaked at least weekly. the intent here is to
-          practice three.js & to eventually create a sort of abstract art
-          project that makes me go "whoa, that's cool"
+          note: this is being tweaked regularly. the intent here is to practice
+          three.js & to eventually create a sort of abstract art project that
+          makes me go "whoa, that's cool"
         </div>
         <br />
       </section>
