@@ -441,9 +441,16 @@ function App() {
         <br />
         <br />
         <div className="project">
+          <strong>TSPi</strong> | Associate Consultant
+          <br />
+          2022 - present
+          <br />
+        </div>
+        <br />
+        <div className="project">
           <strong>DM Digital, LLC</strong> | Freelancer / Owner
           <br />
-          2020 - present
+          2020 - 2022
           <br />
         </div>
         <br />
